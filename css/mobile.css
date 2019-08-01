@@ -1,0 +1,534 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #E2E2E2;
+}
+
+
+/* 头部的黑框 */
+
+.header{
+    width: 100vw;
+    height: 4.1rem;
+    display: fixed;
+    position: fixed;
+}
+
+.nav{
+    width: 100vw;
+    height: 4.1rem;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .line{
+    width: 4rem;
+    height: 4rem;
+    background-color:  #1A1A1A;
+    background-image: url("../images/line.png");
+    background-size: cover;
+    background-origin: content-box;
+    margin-left: 0.5rem;
+}
+
+.nav .top{
+    width: 1.7rem;
+    height: 1.7rem;
+    background-size: cover;
+    background-origin: content-box;
+}
+
+.nav .logo{    
+    background-image: url("../images/logo.jpg");
+}
+
+.nav .search{  
+    background-image: url("../images/search.png");
+    margin-right: 1.6rem;
+}
+
+
+/* 滑动图片的位置 */
+
+.move{
+    width: 100v;
+    height: 14rem;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.move .move-box{
+    width: 26.6rem;
+    height: 13.5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.move .move-box img{
+    width: 24.8rem;
+    height: 10.3rem;
+    border-radius: 5px;
+}
+
+.dotted{
+    width: 4rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 1.5rem;
+}
+
+.dotted ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dotted ul li{
+    list-style: none;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dotted ul li span{ 
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid #C2C3C4;
+    display: inline-block;
+}
+
+/* 滑动模块的部分 */
+
+.hotshop{
+    width: 100vw;
+    height: 20rem;
+    /* border-bottom: 1px solid #EDEDED; */
+}
+
+.hotshop-box{
+    width: 26.6rem;
+    height: 19.5rem;
+    background-color: #fff;
+}
+
+/* 所有模块的头部 */
+
+.box-top{
+    width: 26.6rem;
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #F6F6F6
+}
+
+.top-text-box{
+    width: 24.5rem;
+    height: 3.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-top-text{
+    font-size: 1.1rem;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    color: #6F6F6F;
+}
+
+/* 滑动模块的身体部分 */
+.hotshop-body{
+    width: 100vw;
+    height: 16.25rem;
+    /* border-bottom: 1px solid #EDEDED; */
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+}
+
+/* 每个滑动模块样式 */
+
+.hotshop-container-box{
+    width: 9.6rem;
+    height: 14.9rem;
+    /* border: 1px solid navajowhite;  */
+    margin-top: 1.3rem;
+    margin-right: .5rem;
+}
+
+.hotshop-body .margin-left{
+    margin-left: 1rem;
+}
+
+/* 滑动模块中图片设置 */
+.hotshop-img-box{
+    width: 8.9rem;
+    height: 8.9rem;    
+}
+
+.hotshop-img-box img{
+    width: 8.9rem;
+    height: 8.9rem;
+    border: 1px solid #F6F6F6;
+    border-radius: 5px;
+}
+
+/* 图片下面的文字设置 */
+.hotshop-text{
+    width: 8.9rem;
+    height: 5.6rem;
+    /* border: 1px solid blue; */
+}
+
+h4{
+    width: 7.1rem;
+    height: 1rem;
+    font-size: .6rem;
+    color: #333333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 1rem;
+    margin-top: .5rem;
+}
+
+.hotshop-text p{
+    width: 7.1rem;
+    height: 1rem;
+    font-size: .5rem;
+    color: #7f7f7f;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 1rem;
+    margin-top: .4rem;
+}
+
+.hotshop-text span{
+    color: #D7574F;
+    font-size: .6rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+
+/* 服饰箱包模块身体 */
+.clothes{
+    width: 26.6rem;
+    height: 57.5rem;
+    border-bottom: 1px solid #EDEDED;     
+}
+
+.clothes-box{
+    width: 26.6rem;
+    height: 57rem;
+    background-color: #fff;
+}
+
+.clothes-body{
+    width: 26.6rem;
+    height: 53.3rem;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.clothes-container-box{
+    width: 26.6rem;
+    height: 10.75rem;
+    border-bottom: 1px solid  #EDEDED;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.clothes-img-box{
+    width: 8.9rem;
+    height: 8.9rem;
+    margin-right: 2.5rem;
+    float: left;
+    clear: both;
+    
+}
+
+.clothes-img-box img{
+    width:8.9rem;
+    height: 8.9rem;
+    margin-right: 1.55rem;
+}
+
+/* 服饰箱包模块右边文字部分 */
+
+ul li{
+     list-style: none;
+}
+
+.clothes-text{
+    width: 10.4rem;
+    height: 4rem;
+    /* display: flex;
+    justify-content: right;
+    flex-direction: column; */
+    margin-bottom: 2rem;
+}
+
+h5{
+    width: 10.3rem;
+    height: 1rem;
+    font-size: .6rem;
+    color: #333333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+   
+}
+
+
+.clothes-p{
+    width: 10.3rem;
+    height: 1rem;
+    font-size: .5rem;
+    color: #7f7f7f;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: .4rem;
+   
+}
+
+.clothes-text .dot{
+    width: 10.3rem;
+    height: 1rem;
+    margin-top: .4rem;
+}
+
+
+.clothes-text .dot ul{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.clothes-text ul li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #C2C3C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5rem;
+}
+
+.clothes-text ul li span{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+
+.clothes-text .price{
+    width: 10.3rem;
+    height: 1rem;
+    color: #D7574F;
+    /* font-size: .6rem; */
+    font-weight: bold;
+    margin-top: .4rem;
+}
+
+.clothes-text .blue-box{
+    width: 2.5rem;
+    height: 1.1rem;
+    border: 1px solid #B5CBFA;
+    border-radius: 3px;
+    background-color: #E5EFFF;
+    color: #3965CC;
+    font-size: .4rem;
+    font-weight: 700;
+    margin-top: .4rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+/* 官方配件 */
+.forum{
+    width: 26.6rem;
+    height: 59.5rem;
+    border-bottom: 1px solid #EDEDED;
+ 
+}
+
+.forum-box{
+    width: 26.6rem;
+    height: 59rem;
+    background-color: #fff;
+}
+
+
+.forum-body{
+    width: 26.1rem;
+    height: 55.6rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1.5rem 0rem;
+
+}
+
+.forum-container-box{
+    width: 12.2rem;
+    height: 18rem;
+    /* border: 1px solid #aaa; */
+    padding-left: .4rem;
+ 
+}
+
+.forum-img-box{
+    width: 12rem;
+    height: 12rem;
+}
+
+.forum-img-box img{
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+}
+
+.forum-text{
+    width: 12rem;
+    height: 5.9rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column;
+    margin-top: .5rem;
+    /* padding: .4rem .6rem .9rem; */
+}
+
+.forum-text p{
+    width: 10.3rem;
+    height: 1rem;
+    font-size: .5rem;
+    color: #7f7f7f;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 1rem;
+    margin-top: .4rem;
+}
+
+.forum-text span{
+    width: 10.3rem;
+    height: 1rem;
+    color: #D7574F;
+    font-size: .6rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: .4rem;
+}
+
+.forum-text h4{
+    width: 10.3rem;
+    height: 1rem;
+    font-size: .6rem;
+    color: #333333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* padding-left: 1rem; */
+    margin-top: .5rem;
+}
+
+/* 畅呼吸 */
+
+.area{
+    width: 26.6rem;
+    height: 41.4rem;
+    border-bottom: 1px solid #EDEDED;
+ 
+}
+
+.area-box{
+    width: 26.6rem;
+    height: 40.9rem;
+    background-color: #fff;
+}
+
+.area-body{
+    width: 26.1rem;
+    height: 37.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1.5rem 0rem;
+
+}
+
+/* 底部 */
+
+.footer{
+    width: 100vw;
+    height: 5.5rem;
+    background-color: #fff;
+    position: fixed; 
+    bottom: 0;
+}
+
+.footer-box{
+    width: 6.6rem;
+    height: 5.5rem;
+    display: flex;
+   
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.footer-box .footer-container{
+    width: 6.6rem;
+    height: 5.5rem; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+      
+   
+}
+
+.footer-container img{
+    width: 2.25rem;
+    height: 2.25rem;
+    /* margin: 7px auto 2px; */
+    margin-left: 5px;
+}
+
+.footer-container h4{
+    width: 6.6rem;
+    height: 1.1rem;
+    text-align: center;
+    line-height: 1.1rem;
+    color: #ADADAD;
+    margin-right: 5px;
+}
+
+.footer-box .page{
+    background-color: #F3F3F3;
+}
+
